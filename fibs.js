@@ -8,7 +8,7 @@ function fibsIterative(number) {
   return sequence;
 }
 
-// console.log(fibsIterative(8)); // returns [0, 1, 1, 2, 3, 5, 8, 13]
+console.log(fibsIterative(8)); // returns [0, 1, 1, 2, 3, 5, 8, 13]
 
 function fibsRecursive(number, sequence = [0, 1]) {
   const lastTwo = sequence.slice(-2);
@@ -18,4 +18,4 @@ function fibsRecursive(number, sequence = [0, 1]) {
   return fibsRecursive(number - 1, sequence);
 }
 
-// console.log(fibsRecursive(8)); // returns [0, 1, 1, 2, 3, 5, 8, 13]
+console.log(fibsRecursive(8)); // returns [0, 1, 1, 2, 3, 5, 8, 13]
